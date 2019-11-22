@@ -59,8 +59,7 @@ public class AddFragment extends Fragment implements View.OnClickListener {
                 Address = etAddress.getText().toString().trim();
                 Age = etAge.getText().toString().trim();
 
-                // Toast.makeText(getActivity(), ""+UserName+Age+Address, Toast.LENGTH_SHORT).show();
-                if (TextUtils.isEmpty(UserName)) {
+                                   if (TextUtils.isEmpty(UserName)) {
                     etName.setError("Enter Username");
                     return;
                 }
@@ -80,6 +79,7 @@ public class AddFragment extends Fragment implements View.OnClickListener {
                     Gender = "Female";
                 }
                 if (rothers.isChecked()) {
+
                     Gender = "Others";
                 }
 
